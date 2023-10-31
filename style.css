@@ -1,0 +1,147 @@
+/* reset from elad */
+/* palette 
+#d2bdc9, #000000
+#b79bac, #000000
+#895777, #ffffff
+#744463, #ffffff
+#603251, #ffffff
+*/
+
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+
+/* @font-face {
+    font-family: "Geist";
+    src: url("fonts/Geist-Light.otf") format("opentype");
+} */
+
+:root {
+    --margin-left: 5%;
+    --margin-right: 20%;
+    --intro-size: 3.0em;
+}
+
+body {
+    background-color: #d2bdc9;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    white-space: nowrap;
+}
+
+header {
+    font-size: 2em;
+    background-color: #895777;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+
+    border-bottom: 1px solid #744463;
+
+    padding: 1em var(--margin-left) 1em var(--margin-left);
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+header nav li {
+    margin-right: 0.5em;
+}
+
+section.content {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-right);
+}
+
+section.content a {
+    text-decoration: underline;
+    text-decoration-color: #895777;
+    transition: text-decoration-color 1s, color 1s;
+}
+
+section.content a:hover {
+    text-decoration: underline;
+    text-decoration-color: #b79bac;
+    color: #744463;
+}
+
+section.content p {
+    font-size: 1.5em;
+    padding: 1em 0em 0em 0em;
+}
+
+section.content p.intro {
+    font-size: var(--intro-size);
+    margin-right: 2em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid #b79bac;
+    background-color: #d2bdc9;
+    position: absolute;
+    bottom: 0em;
+    padding: 1em var(--margin-right) 1em var(--margin-left);
+}
+
+footer a {
+    text-decoration: underline;
+    text-decoration-color: #895777;
+    transition: text-decoration-color 1s, color 1s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: #b79bac;
+    color: #744463;
+}
+
+@media (max-width: 800px) {
+    :root {
+        --margin-right: 5%;
+        --intro-size: 2.5em;
+    }
+
+    header {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --margin-right: 5%;
+        --intro-size: 2.0em;
+    }
+
+    header {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 450px) {
+    :root {
+        --margin-val: 5%;
+        --intro-size: 1.5em;
+    }
+
+    header {
+        font-size: 1.0em;
+    }
+}
